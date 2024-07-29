@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>My Website</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">My_Website</div>
+    <nav>
+      <ul>
+        <li><a href="#beranda">BERANDA</a></li>
+        <li><a href="#profil">PROFIL</a></li>
+        <li><a href="#audio-video">AUDIO-VIDEO</a></li>
+        <li><a href="#tentang">TENTANG</a></li>
+        <li><a href="#berita">BERITA</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="beranda">
+    <h2>Selamat Datang di Website Saya</h2>
+    <p>Ini adalah halaman beranda.</p>
+  </section>
+
+  <section id="profil">
+    <h2>Profil Saya</h2>
+    <div class="profile-container">
+      <img src="sy.jpg" alt="Foto Profil" class="profile-photo" width="230" height="170">
+      <div class="profile-text">
+        <p><strong>Nama:</strong> SITI ISMIYATI FAUZIAH MUSA</p>
+        <p><strong>NIM:</strong> 16323009</p>
+        <p><strong>Jurusan:</strong> Manajemen Informatika</p>
+        <p><strong>Kelas:</strong> 1A</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="audio-video">
+    <h2>Audio dan Video</h2>
+    <p>Ini adalah halaman audio dan video.</p>
+    <video controls autoplay src="vd.mp4" width="280" height="280"></video>
+    <audio controls autoplay src="intro.mp3" width="250" height="250"></audio>
+  </section>
+
+  <section id="tentang">
+    <h2>Tentang Saya</h2>
+    <p>Hallo gaes, Assalamualaikum, shalom, Om swastiastu Namo Buddhaya salam kebajikan. Nama lengkap saya SITI ISMIYATI FAUZIAH MUSA, nama panggilan ISMI, saya lahir di fakfak 06 oktober 2004. saya anak ke 2 dari 3 bersaudara, saya mempunyai kaka cowo dan adek cowo. Saya tinggal di sebrang Jln. La Tonde Kampung Kayu Merah RT 05. Saya sekarang berkuliah di politeknik negeri fakfak, Sempat mendaftar di kampus luar kota Yaitu di Universitas Diponegoro tepatnya di semarang, lewat jalur SNBP, tapi keterimanya di sini. Riwayat pendidikan saya, saya TK di Yapis Fakfak, SD di Madrasah Ibidaiyah Negeri Fakfak, SMP di yapis Fakfak, SMA di SMA Negeri 2 FAkfak. hobi saya menonton, apapun genre filmya, mau itu horor, komedi, action, romance, kalau bisa menghibur saya, saya akan menontonnya. warna kesukaan saya warna ungu, biru, abu-abu, hitam, dan putih makanan kesukaan saya yaitu Mie, Minuman kesukaan saya apapun itu.</p>
+  </section>
+
+  <section id="berita">
+    <h2>Berita Terbaru</h2>
+    <iframe src="https://20.detik.com/detikupdate/20240723-240723064/pesan-jokowi-di-hari-anak-nasional-belajar-belajar-belajar" width="1150" height="450"></iframe>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 ismi</p>
+  </footer>
+
+  <script>
+    // Add smooth scrolling behavior
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const targetId = e.target.getAttribute('href');
+        const targetSection = document.querySelector(targetId);
+        targetSection.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>

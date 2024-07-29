@@ -1,0 +1,144 @@
+/* Reset styles */
+* {
+  margin: 0;
+  padding: 10;
+  box-sizing: border-box;
+}
+
+/* Global styles */
+body {
+  font-family: 'Montserrat', sans-serif;
+  background-color: black;
+}
+
+header {
+  background-color: #03050cea;
+  color: #fff;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style-type: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 10px;
+  background: #00000000;
+}
+
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+  padding: 10px 20px;
+  border-radius: 4px;
+}
+
+nav ul li a:hover {
+  color: #38536e;
+  background-color: rgba(255, 255, 255, 0.247);
+}
+
+section {
+  padding: 80px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-size: cover;
+  background-position: center;
+  min-height: 500px;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 800px;
+  margin:  20;
+}
+
+.profile-photo {
+  width: 200px;
+  height: 220px;
+  margin-right: 30px;
+  border: 5px solid #ffffff00;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.profile-text {
+  text-align: left;
+}
+
+.profile-text p {
+  margin: 10px 0; 
+  font-size: 18px; 
+  line-height: 1.5;
+}
+
+#beranda {
+background-image: url(bg5.jpg);
+padding: 220px;
+margin: 10px;
+}
+
+#profil {
+  background-image: url(bg6.jpg);
+  padding: 215px;
+  margin: 10px;
+}
+
+#audio-video {
+  background-image: url(bg6.jpg);
+  padding: 100px;
+  margin: 10px;
+}
+
+#tentang {
+  background-image: url(bg6.jpg);
+  padding: 215px;
+  margin: 10px;
+}
+
+#berita {
+  background-image: url(bg6.jpg);
+  padding: 215px;
+  margin: 10px;
+}
+
+section h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+section p {
+  font-size: 18px;
+  max-width: 800px;
+  margin-bottom: 40px;
+  color: #ffffff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+footer {
+  background-color: #1d3634;
+  color: #fff;
+  padding: 50;
+  text-align: center;
+}
